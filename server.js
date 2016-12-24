@@ -23,11 +23,11 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  res.render('mainteneance.hbs',{
-    message: 'Under Mainteneance'
-  })
-});
+//app.use((req, res, next) => {
+//  res.render('mainteneance.hbs',{
+//    message: 'Under Mainteneance'
+//  })
+//});
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
